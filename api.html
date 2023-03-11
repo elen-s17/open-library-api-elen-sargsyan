@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Open Library API</title>
+    <style>
+      #book-details {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 400px;
+        background-color: #fff;
+        border: 1px solid #000;
+        padding: 20px;
+        box-sizing: border-box;
+        display: none;
+      }
+
+      #book-details img {
+        float: left;
+        margin-right: 20px;
+      }
+
+      #book-details h1 {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Open Library API</h1>
+    <input type="text" id="search-input" placeholder="Search books by title, author, or subject" />
+    <button id="search-button">Search</button>
+    <div id="book-list"></div>
+    <div id="book-details">
+      <img id="book-cover" src="" alt="Book cover" />
+      <div>
+        <h1 id="book-title"></h1>
+        <p id="book-authors"></p>
+        <p id="book-published"></p>
+        <p id="book-subjects"></p>
+        <p id="book-description"></p>
+      </div>
+    </div>
+    <script src="api.js"></script>
+  </body>
+</html>
